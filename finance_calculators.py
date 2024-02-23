@@ -26,21 +26,25 @@ Or compound interest rate: interest = deposit_amount * math.pow((1 + interest_ra
 13. If 'investment' or 'bond' have not been entered by user display error message.
 End
 '''
-
+# Import math library
 import math
 
+# Prnt the programme
 print("Your calculator:")
 print("investment - to calculate the amount of interest you'll earn on your investment")
 print("bond - to calculate the amount you'll have to pay on a home loan")
 
+# Ask user to choose 'investment' or 'bond'
 choice = input("Enter either 'investment' or 'bond' from the menu above to proceed: ").lower()
 
+# User chooses 'investment', interest rate is calculated
 if choice == 'investment':
     deposit_amount = float(input("Please enter the amount of money: "))
     interest_rate = float(input("Please enter the interest rate (number only and omit percentage sign): "))
     years = int(input("Please enter the number of years for investment: "))
     interest_type = input("Please enter 'simple' or 'compound' interest: ")
 
+    # Simple or compound interest yields a different formula
     if interest_type == 'simple':
         interest = deposit_amount * (1 + (interest_rate / 100) * years)
     elif interest_type == 'compound':
@@ -48,8 +52,10 @@ if choice == 'investment':
     
     interest = round(interest, 2)
 
+    # Print result for investment
     print(f"Your investment after {years} years at {interest_rate}% {interest_type} interest will be: {interest}")
 
+# User chooses 'bond', repayment formula is calculated
 elif choice == 'bond':
     present_value = float(input("Enter the present value of the house: "))
     interest_rate = float(input("Enter the interest rate (number only and omit percentage sign): "))
@@ -59,7 +65,9 @@ elif choice == 'bond':
 
     monthly_payment = round(monthly_payment, 2)
 
+    # Print result for bond
     print(f"Your monthly payment will be {monthly_payment} for {months} months.")
 
+# Error message for invalid input
 else:
     print("Invalid choice entered. Please enter 'investment' or 'bond'.")
