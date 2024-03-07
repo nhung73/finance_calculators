@@ -1,35 +1,41 @@
 This Capstone Project is a task executed during HyperionDev/CoGrammar Data Science Bootcamp November 2023/March 2024.
+This repository contains a Python script for calculating the returns on investments and the monthly payments for bonds.
 
-The user should be allowed to choose which calculation they want to do.
+Usage
+
+Requirements
+Python 3.x
+
+Instructions
+1. Clone the repository to your local machine.
+2. Navigate to the directory containing the finance_calculators.py file.
+3. Run the script using Python:
+python finance_calculators.py
+
+Follow the on-screen prompts to choose between calculating an investment or a bond.
+
+Input
+- For an investment:
+    Amount of money to be deposited.
+    Interest rate (as a number, without the percentage sign).
+    Number of years for the investment.
+    Type of interest: 'simple' or 'compound'.
+- For a bond:
+    Present value of the house.
+    Interest rate (as a number, without the percentage sign).
+    Number of months for bond repayment.
+
+Output
+- For an investment: The amount of interest earned after the specified number of years.
+- For a bond: The monthly payment required for the specified number of months.
+
+Example
+Your calculator:
 investment - to calculate the amount of interest you'll earn on your investment
 bond - to calculate the amount you'll have to pay on a home loan
-
-If the user selects ‘investment’:
-● Ask the user to input:
-○ The amount of money that they are depositing.
-○ The interest rate (as a percentage). Only the number of the interest rate should be entered. Example, the user should enter 8 and not 8%.
-○ The number of years they plan on investing.
-○ Then ask the user to input if they want “simple” or “compound” interest, and store this in a variable called interest. Depending on whether or not they typed “simple” or “compound”, output the
-appropriate amount that they will get back after the given period, at the specified interest rate.
-○ Print out the answer!
-
-Interest formula:
-The total amount when simple interest is applied is calculated as follows: 𝐴 = 𝑃(1 + 𝑟 × 𝑡)
-The Python equivalent is very similar: A = P *(1 + r*t)
-The total amount when compound interest is applied is calculated as follows: 𝐴 = 𝑃(1 + 𝑟)𝑡
-The Python equivalent is slightly different: A = P * math.pow((1+r),t)
-
-If the user selects ‘bond’:
-● Ask the user to input:
-○ The present value of the house. e.g. 100000
-○ The interest rate. e.g. 7
-○ The number of months they plan to take to repay the bond. e.g. 120
-○ Calculate how much money the user will have to repay each month
-
-Bond repayment formula:
-The amount that a person will have to be repaid on a home loan each month is calculated as follows: 𝑟𝑒𝑝𝑎𝑦𝑚𝑒𝑛𝑡 = 𝑖 × 𝑃1− (1+𝑖)−𝑛
-The Python equivalent is slightly different: repayment = (i * P)/(1 - (1 + i)**(-n))
-In the formula above:
-● ‘P’ is the present value of the house.
-● ‘i’ is the monthly interest rate, calculated by dividing the annual interest rate by 12. Divide the interest entered by the user by 100 e.g. (8 / 100) before dividing by 12.
-● ‘n’ is the number of months over which the bond will be repaid.
+Enter either 'investment' or 'bond' from the menu above to proceed: investment
+Please enter the amount of money: 1000
+Please enter the interest rate (number only and omit percentage sign): 5
+Please enter the number of years for investment: 3
+Please enter 'simple' or 'compound' interest: compound
+Your investment after 3 years at 5.0% compound interest will be: 1157.63
