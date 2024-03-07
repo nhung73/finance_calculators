@@ -1,6 +1,7 @@
-# finance_calculators, repository created following a task executed in the HyperionDev/Cogrammar bootcamp Nov 2023-March 2024
+# finance_calculators
 
 ## Description
+This repository has been created following a task executed in the HyperionDev/Cogrammar bootcamp Nov 2023-March 2024
 This Python script provides functionalities to calculate returns on investments and monthly payments for bonds. It allows users to input parameters such as deposit amount, interest rate, number of years, and interest type (simple or compound) for investments, as well as present value, interest rate, and repayment period for bonds. The script then computes the corresponding results based on the chosen option.
 
 ## Table of Contents
