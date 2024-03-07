@@ -3,7 +3,7 @@ This repository contains a Python script for calculating the returns on investme
 
 ###
 
-<h3 Usage </h3>
+<h3 Usage</h3>
 
 ###
 Requirements
