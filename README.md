@@ -1,7 +1,7 @@
-This Capstone Project is a task executed during HyperionDev/CoGrammar Data Science Bootcamp November 2023/March 2024.
+This Capstone Project is a task executed during HyperionDev/CoGrammar Data Science Bootcamp November 2023/March 2024. <br>
 This repository contains a Python script for calculating the returns on investments and the monthly payments for bonds.
 
-Usage
+<h3 Usage /h3>
 
 Requirements
 Python 3.x
@@ -29,7 +29,7 @@ Output
 - For an investment: The amount of interest earned after the specified number of years.
 - For a bond: The monthly payment required for the specified number of months.
 
-Example
+Example <br>
 Your calculator:
 investment - to calculate the amount of interest you'll earn on your investment
 bond - to calculate the amount you'll have to pay on a home loan
