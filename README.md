@@ -1,64 +1,43 @@
-This Capstone Project is a task executed during HyperionDev/CoGrammar Data Science Bootcamp November 2023/March 2024. <br>
-This repository contains a Python script for calculating the returns on investments and the monthly payments for bonds.
+# finance_calculators, repository created following a task executed in the HyperionDev/Cogrammar bootcamp Nov 2023-March 2024
 
-###
+## Description
+This Python script provides functionalities to calculate returns on investments and monthly payments for bonds. It allows users to input parameters such as deposit amount, interest rate, number of years, and interest type (simple or compound) for investments, as well as present value, interest rate, and repayment period for bonds. The script then computes the corresponding results based on the chosen option.
 
-<h3 align="left">  Usage</h3>
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
 
-###
-<h3 align="left">  Requirements</h3>
-Python 3.x
+## Installation
+1. Clone the repository:
+    ```
+    git clone https://github.com/yourusername/yourrepository.git
+    ```
+2. Navigate to the project directory:
+    ```
+    cd yourrepository
+    ```
 
-###
+## Usage
+1. Import the required library:
+    ```python
+    import math
+    ```
+2. Run the script:
+    ```python
+    python finance_calculators.py
+    ```
+3. Follow the on-screen prompts to choose between calculating an investment or a bond and provide the necessary input.
+4. View the calculated results.
 
-<h3 align="left">  Instruments</h3>
+### Example
 
-###
-
-1. Clone the repository to your local machine.
-2. Navigate to the directory containing the finance_calculators.py file.
-3. Run the script using Python:
-python finance_calculators.py
-
-Follow the on-screen prompts to choose between calculating an investment or a bond.
-
-###
-
-<h3 align="left">  Input</h3>
-
-###
-
-- For an investment:
-    Amount of money to be deposited.
-    Interest rate (as a number, without the percentage sign).
-    Number of years for the investment.
-    Type of interest: 'simple' or 'compound'.
-- For a bond:
-    Present value of the house.
-    Interest rate (as a number, without the percentage sign).
-    Number of months for bond repayment.
-
-###
-
-<h3 align="left">  Output</h3>
-
-###
-
-- For an investment: The amount of interest earned after the specified number of years.
-- For a bond: The monthly payment required for the specified number of months.
-
-###
-
-<h3 align="left">  Example</h3>
-
-###
-
+```
 Your calculator:
 investment - to calculate the amount of interest you'll earn on your investment
 bond - to calculate the amount you'll have to pay on a home loan
 Enter either 'investment' or 'bond' from the menu above to proceed: investment
-Please enter the amount of money: 1000
-Please enter the interest rate (number only and omit percentage sign): 5
+Please enter the amount of money: 5000
+Please enter the interest rate (number only and omit percentage sign): 6.5
 Please enter the number of years for investment: 3
 Please enter 'simple' or 'compound' interest: compound
-Your investment after 3 years at 5.0% compound interest will be: 1157.63
+Your investment after 3 years at 6.5% compound interest will be: 6076.57
