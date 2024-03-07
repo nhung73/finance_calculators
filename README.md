@@ -1,7 +1,7 @@
 This Capstone Project is a task executed during HyperionDev/CoGrammar Data Science Bootcamp November 2023/March 2024. <br>
 This repository contains a Python script for calculating the returns on investments and the monthly payments for bonds.
 
-<h3 Usage /h3>
+<h3 Usage </h3>
 
 Requirements
 Python 3.x
